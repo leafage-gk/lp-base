@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "formulahendry.terminal",
+    "mrmlnc.vscode-scss",
+    "octref.vetur"
+  ]
+}

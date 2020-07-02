@@ -1,0 +1,152 @@
+.text-small,
+.text-medium,
+.text-large,
+.text-x-large {
+  line-height: 1.25;
+}
+
+.heading-small {
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.heading-medium {
+  line-height: 1.13636364;
+  font-weight: bold;
+}
+
+.heading-large {
+  line-height: 1.15384615;
+  font-weight: bold;
+}
+
+.heading-x-large {
+  line-height: 1.25;
+  font-weight: bold;
+}
+
+@include breakpoint-pc {
+  .text-small {
+    font-size: #{$text-small}rem;
+  }
+  .text-medium {
+    font-size: #{$text-medium}rem;
+  }
+  .text-large {
+    font-size: #{$text-large}rem;
+  }
+  .text-x-large {
+    font-size: #{$text-x-large}rem;
+  }
+  .heading-small {
+    font-size: #{$headling-small}rem;
+  }
+  .heading-medium {
+    font-size: #{$headling-medium}rem;
+  }
+  .heading-large {
+    font-size: #{$headling-large}rem;
+  }
+  .heading-x-large {
+    font-size: #{$headling-x-large}rem;
+  }
+}
+
+@function tabletSize ($size) {
+  @return #{$size / 1.28}vw;
+}
+
+@include breakpoint-tablet {
+  .text-small {
+    font-size: tabletSize($text-small);
+  }
+  .text-medium {
+    font-size: tabletSize($text-medium);
+  }
+  .text-large {
+    font-size: tabletSize($text-large);
+  }
+  .text-x-large {
+    font-size: tabletSize($text-x-large);
+  }
+  .heading-small {
+    font-size: tabletSize($headling-small);
+  }
+  .heading-medium {
+    font-size: tabletSize($headling-medium);
+  }
+  .heading-large {
+    font-size: tabletSize($headling-large);
+  }
+  .heading-x-large {
+    font-size: tabletSize($headling-x-large);
+  }
+}
+
+@function spSize ($size) {
+  @return #{(2 + $size / 1.5) / 0.75}vw;
+}
+
+@include breakpoint-sp {
+  .text-small {
+    font-size: spSize($text-small);
+  }
+  .text-medium {
+    font-size: spSize($text-medium);
+  }
+  .text-large {
+    font-size: spSize($text-large);
+  }
+  .text-x-large {
+    font-size: spSize($text-x-large);
+  }
+  .heading-small {
+    font-size: spSize($headling-small);
+  }
+  .heading-medium {
+    font-size: spSize($headling-medium);
+  }
+  .heading-large {
+    font-size: spSize($headling-large);
+  }
+  .heading-x-large {
+    font-size: spSize($headling-x-large);
+  }
+}
+
+.black-text {
+  color: $black;
+}
+.white-text {
+  color: $white;
+}
+.grey-darker-text {
+  color: $grey-darker;
+}
+.grey-dark-text {
+  color: $grey-dark;
+}
+.grey-text {
+  color: $grey;
+}
+.grey-light-text {
+  color: $grey-light;
+}
+.grey-lighter-text {
+  color: $grey-lighter;
+}
+.primary-text {
+  color: $primary;
+}
+.secondary-text {
+  color: $secondary;
+}
+.success-text {
+  color: $success;
+}
+.error-text {
+  color: $error;
+}
+.warning-text {
+  color: $warning
+}

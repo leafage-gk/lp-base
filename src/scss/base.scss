@@ -1,0 +1,29 @@
+@import 'base/reset';
+@import 'base/form';
+@import 'base/general';
+@import 'base/font';
+@import 'base/spacer';
+
+.sp {
+  display: none;
+}
+
+@include breakpoint-sp {
+  .sp {
+    display: block;
+  }
+  .pc {
+    display: none;
+  }
+}
+
+.elevation {
+  @include elevation(rgba($black, 0.5));
+}
+
+img {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
