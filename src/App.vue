@@ -8,6 +8,7 @@
       <!-- ここにセクションを追加していく -->
     </div>
     <Footer v-if="showFooter" />
+    <TopScroller />
   </div>
 </template>
 
@@ -27,6 +28,7 @@ import FirstView from '@/components/FirstView.vue'
 import Section1 from '@/components/Section1.vue'
 import Section2 from '@/components/Section2.vue'
 import Footer from '@/components/Footer.vue'
+import TopScroller from '@/components/TopScroller.vue'
 
 export default {
   name: 'App',
@@ -36,7 +38,8 @@ export default {
     FirstView,
     Section1,
     Section2,
-    Footer
+    Footer,
+    TopScroller,
   },
   data() {
     return {
@@ -45,8 +48,8 @@ export default {
       // ヘッダーのfixedオンオフ
       fixedHeader: true,
       // フッターの表示オンオフ
-      showFooter: true
+      showFooter: true,
     }
-  }
+  },
 }
 </script>
