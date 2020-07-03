@@ -1,14 +1,15 @@
 <template>
   <div id="app">
-    <Header v-if="showHeader" :fixed="fixedHeader" />
+    <header-section v-if="showHeader" :fixed="fixedHeader" />
     <div class="contents" :class="{ 'with-header': showHeader }">
-      <FirstView />
-      <Section1 />
-      <Section2 />
+      <first-view />
+      <section1 />
+      <section2 />
+      <form-section />
       <!-- ここにセクションを追加していく -->
     </div>
-    <Footer v-if="showFooter" />
-    <TopScroller />
+    <footer-section v-if="showFooter" />
+    <top-scroller />
   </div>
 </template>
 
@@ -23,22 +24,24 @@
 
 <script>
 // コンポーネントのインポート
-import Header from '@/components/Header.vue'
+import HeaderSection from '@/components/HeaderSection.vue'
 import FirstView from '@/components/FirstView.vue'
 import Section1 from '@/components/Section1.vue'
 import Section2 from '@/components/Section2.vue'
-import Footer from '@/components/Footer.vue'
+import FormSection from '@/components/FormSection.vue'
+import FooterSection from '@/components/FooterSection.vue'
 import TopScroller from '@/components/TopScroller.vue'
 
 export default {
   name: 'App',
   components: {
     // コンポーネントの登録
-    Header,
+    HeaderSection,
     FirstView,
     Section1,
     Section2,
-    Footer,
+    FormSection,
+    FooterSection,
     TopScroller,
   },
   data() {

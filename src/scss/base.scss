@@ -27,3 +27,19 @@ img {
   -webkit-user-select: none;
   -ms-user-select: none;
 }
+
+.button-outlined {
+  display: inline-block;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  background-color: $white;
+  border: 0.2rem solid $primary;
+  color: $primary;
+  font-size: 2rem;
+  font-weight: bold;
+
+  &:hover {
+    background-color: $primary;
+    color: $white;
+  }
+}

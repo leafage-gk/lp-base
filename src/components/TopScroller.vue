@@ -74,7 +74,7 @@ export default {
     right: 20px;
     transition: all 0.3s ease;
     visibility: hidden;
-    z-index: 9999;
+    z-index: 50;
 
     &:hover {
       cursor: pointer;
