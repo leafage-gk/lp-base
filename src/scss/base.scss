@@ -43,3 +43,13 @@ img {
     color: $white;
   }
 }
+
+.article {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-spacing: -1em;
+  display: block;
+  span {
+    display: inline-block;
+  }
+}

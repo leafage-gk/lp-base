@@ -1,5 +1,5 @@
 <template>
-  <div class="header elevation" :class="{ 'fixed': fixed }">
+  <div class="header" :class="{ 'fixed': fixed, elevation }">
     <div class="logo">
       <img src="https://via.placeholder.com/128x62/3F51B5/FFFFFF?text=LOGO" alt="ロゴ" />
     </div>
@@ -132,7 +132,24 @@ export default {
   data() {
     return {
       showMenu: false,
+      elevation: true,
     }
-  }
+  },
+  methods: {
+    onScroll() {
+      if (window.pageYOffset > 0) {
+        this.elevation = true
+      } else {
+        this.elevation = false
+      }
+    },
+  },
+  mounted() {
+    this.onScroll()
+    window.addEventListener('scroll', this.onScroll)
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.onScroll)
+  },
 }
 </script>
