@@ -1,32 +1,24 @@
 <template>
-  <container
-    class="first-view"
-    image="https://via.placeholder.com/1280x620/DDDDFF.jpg"
-    image-sp="https://via.placeholder.com/750x620/DDDDFF.jpg"
-    image-alt="first view"
-    fluid
-  >
-    <div class="absolute center">
+  <la-container class="first-view" fluid>
+    <div class="first-view__content">
       <p class="heading-x-large">ファーストビュー</p>
       <!-- 画像のsrcは"@/assets/xxxx.jpg" -->
       <img src="@/assets/vue.png" alt="vue-logo" class="vue-logo" />
     </div>
-  </container>
+  </la-container>
 </template>
 
 <style lang="scss" scoped>
 .first-view {
   background: grey;
-  .center {
-    color: white;
+  &__content {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
-  }
-  @include breakpoint-sp {
-    .center {
+    height: 300px;
+    color: white;
+    @include breakpoint-sp {
       flex-direction: column;
     }
   }
@@ -34,12 +26,9 @@
 </style>
 
 <script>
-import Container from './Container.vue'
+import Vue from 'vue'
 
-export default {
+export default Vue.extend({
   name: 'FirstView',
-  components: {
-    Container,
-  },
-}
+})
 </script>

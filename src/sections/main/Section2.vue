@@ -1,11 +1,6 @@
 <template>
-  <container
-    class="section"
-    image="https://via.placeholder.com/1280x620/DDFFDD.jpg"
-    image-sp="https://via.placeholder.com/750x850/DDFFDD.jpg"
-    image-alt="sample image"
-  >
-    <div class="ma-10">
+  <la-container class="section2">
+    <div class="section2__content">
       <h2 class="heading-medium my-2">セクション2</h2>
       <p class="text-small">テキスト小 text-small</p>
       <p class="text-medium">テキスト中 text-medium</p>
@@ -16,22 +11,23 @@
       <p class="heading-large">ヘッディング大 heading-large</p>
       <p class="heading-x-large">ヘッディング大大 heading-x-large</p>
     </div>
-  </container>
+  </la-container>
 </template>
 
-<style lang="scss" scoped>
-.section {
-  background: #EEE;
+<style lang="scss">
+.section2 {
+  background: #eee;
+
+  &__content {
+    padding: 40px;
+  }
 }
 </style>
 
 <script>
-import Container from './Container.vue'
+import Vue from 'vue'
 
-export default {
+export default Vue.extend({
   name: 'Section2',
-  components: {
-    Container,
-  },
-}
+})
 </script>

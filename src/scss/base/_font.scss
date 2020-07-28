@@ -6,23 +6,23 @@
 }
 
 .heading-small {
-  line-height: 1.1;
   font-weight: bold;
+  line-height: 1.1;
 }
 
 .heading-medium {
-  line-height: 1.13636364;
   font-weight: bold;
+  line-height: 1.13636364;
 }
 
 .heading-large {
-  line-height: 1.15384615;
   font-weight: bold;
+  line-height: 1.15384615;
 }
 
 .heading-x-large {
-  line-height: 1.25;
   font-weight: bold;
+  line-height: 1.25;
 }
 
 @include breakpoint-pc {
@@ -52,65 +52,65 @@
   }
 }
 
-@function tabletSize ($size) {
+@function tabletsize($size) {
   @return #{$size / 1.28}vw;
 }
 
 @include breakpoint-tablet {
   .text-small {
-    font-size: tabletSize($text-small);
+    font-size: tabletsize($text-small);
   }
   .text-medium {
-    font-size: tabletSize($text-medium);
+    font-size: tabletsize($text-medium);
   }
   .text-large {
-    font-size: tabletSize($text-large);
+    font-size: tabletsize($text-large);
   }
   .text-x-large {
-    font-size: tabletSize($text-x-large);
+    font-size: tabletsize($text-x-large);
   }
   .heading-small {
-    font-size: tabletSize($headling-small);
+    font-size: tabletsize($headling-small);
   }
   .heading-medium {
-    font-size: tabletSize($headling-medium);
+    font-size: tabletsize($headling-medium);
   }
   .heading-large {
-    font-size: tabletSize($headling-large);
+    font-size: tabletsize($headling-large);
   }
   .heading-x-large {
-    font-size: tabletSize($headling-x-large);
+    font-size: tabletsize($headling-x-large);
   }
 }
 
-@function spSize ($size) {
+@function spsize($size) {
   @return #{(2 + $size / 1.5) / 0.75}vw;
 }
 
 @include breakpoint-sp {
   .text-small {
-    font-size: spSize($text-small);
+    font-size: spsize($text-small);
   }
   .text-medium {
-    font-size: spSize($text-medium);
+    font-size: spsize($text-medium);
   }
   .text-large {
-    font-size: spSize($text-large);
+    font-size: spsize($text-large);
   }
   .text-x-large {
-    font-size: spSize($text-x-large);
+    font-size: spsize($text-x-large);
   }
   .heading-small {
-    font-size: spSize($headling-small);
+    font-size: spsize($headling-small);
   }
   .heading-medium {
-    font-size: spSize($headling-medium);
+    font-size: spsize($headling-medium);
   }
   .heading-large {
-    font-size: spSize($headling-large);
+    font-size: spsize($headling-large);
   }
   .heading-x-large {
-    font-size: spSize($headling-x-large);
+    font-size: spsize($headling-x-large);
   }
 }
 
@@ -148,5 +148,5 @@
   color: $error;
 }
 .warning-text {
-  color: $warning
+  color: $warning;
 }

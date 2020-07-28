@@ -1,55 +1,5 @@
-@import 'base/reset';
-@import 'base/form';
-@import 'base/general';
 @import 'base/font';
-@import 'base/spacer';
 
-.sp {
-  display: none;
-}
-
-@include breakpoint-sp {
-  .sp {
-    display: block;
-  }
-  .pc {
-    display: none;
-  }
-}
-
-.elevation {
-  @include elevation(rgba($black, 0.5));
-}
-
-img {
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-}
-
-.button-outlined {
-  display: inline-block;
-  padding: 1rem 3rem;
-  border-radius: 1rem;
-  background-color: $white;
-  border: 0.2rem solid $primary;
-  color: $primary;
-  font-size: 2rem;
-  font-weight: bold;
-
-  &:hover {
-    background-color: $primary;
-    color: $white;
-  }
-}
-
-.article {
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  word-spacing: -1em;
-  display: block;
-  span {
-    display: inline-block;
-  }
+.la-header {
+  z-index: 100;
 }

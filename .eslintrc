@@ -5,9 +5,21 @@
   },
   "extends": [
     "plugin:vue/essential",
+    "plugin:prettier/recommended",
     "eslint:recommended"
   ],
+  "plugins": ["simple-import-sort"],
   "parserOptions": {
     "parser": "babel-eslint"
+  },
+  "rules": {
+    "vue/component-name-in-template-casing": [
+      "error",
+      "kebab-case",
+      {
+        "registeredComponentsOnly": false
+      }
+    ],
+    "simple-import-sort/sort": "error"
   }
 }

@@ -1,22 +1,12 @@
-const path = require('path')
+const setupConfig = require('@leafage-gk/lp-config')
 
-module.exports = {
-  configureWebpack: {
-    resolve: {
-      alias: {
-        '@': path.resolve(__dirname, 'src/')
-      }
-    }
-  },
-  css: {
-    loaderOptions: {
-      scss: {
-        prependData: '@import "@/scss/settings.scss";'
-      },
-      css: {
-        sourceMap: process.env.NODE_ENV !== 'production'
-      }
-    }
-  },
-  publicPath: './'
+const config = {
+  title: 'lp-base',
+  rootDir: __dirname,
 }
+
+if (process.env.TARGET) {
+  config.target = process.env.TARGET
+}
+
+module.exports = setupConfig(config)
