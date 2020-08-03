@@ -1,17 +1,35 @@
-import '@leafage-gk/lp-utils/dist/lp-utils.css'
-import '@leafage-gk/la-header/dist/la-header.css'
-import '@/scss/base.scss'
+<template>
+  <div id="app">
+    <la-header />
+    <first-view />
+    <section1 />
+    <section2 />
+    <contact-form />
+    <additions />
+  </div>
+</template>
 
-import LpUtils, { createPage } from '@leafage-gk/lp-utils'
+<script>
+import LaHeader from '@leafage-gk/la-header'
 import Vue from 'vue'
-import VueHead from 'vue-head'
 
-Vue.use(VueHead)
-Vue.use(LpUtils)
+import Additions from '@/components/sections/common/Additions.vue'
 
-import sections from './sections/main'
+import ContactForm from './ContactForm.vue'
+import FirstView from './FirstView.vue'
+import Section1 from './Section1.vue'
+import Section2 from './Section2.vue'
 
-createPage({
+export default Vue.extend({
+  name: 'App',
+  components: {
+    LaHeader,
+    Additions,
+    ContactForm,
+    FirstView,
+    Section1,
+    Section2,
+  },
   head: {
     title: {
       inner: 'ガイドライン',
@@ -46,5 +64,5 @@ createPage({
     //   { t: 'application/ld+json', i: '{ "@context": "http://schema.org" }' },
     // ],
   },
-  sections,
 })
+</script>

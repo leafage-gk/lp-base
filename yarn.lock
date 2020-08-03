@@ -1166,22 +1166,22 @@
     cssnano-preset-default "^4.0.0"
     postcss "^7.0.0"
 
-"@leafage-gk/la-header@^0.1.3":
-  version "0.1.3"
-  resolved "https://npm.pkg.github.com/download/@leafage-gk/la-header/0.1.3/71fa038448b1e36b30d1555ecad8bea15c6aa17a05f4a33751b17c6aa0394b9b#701f387bbaee2a89f6e10ffbfea321e6b0e42385"
-  integrity sha512-VXS2VTqnSmC3pelGEyU0QaylxW+EF9xWSlBwtwZreB5tZVIm87nZa+SflXQs04Ui4DlyUP5UzFwJ1AhbtCtrsA==
+"@leafage-gk/la-header@^0.1.4":
+  version "0.1.4"
+  resolved "https://npm.pkg.github.com/download/@leafage-gk/la-header/0.1.4/8cf4ce3da4bcd5e6ed3b977907184904758d7dfdce451a1007db1466c4072c06#7295185746e0181ef2e0e3d72a51919b6e58dfb3"
+  integrity sha512-jUdHJDcQnQKlYK0ML+L9qyHC2Mo9hCeYvlNTtPWsOdouRP/eEmXt3hyIxIMCR0Qz+VYOrvf1eztKa6ZXhwLMiw==
 
-"@leafage-gk/lp-config@^0.1.2":
-  version "0.1.2"
-  resolved "https://npm.pkg.github.com/download/@leafage-gk/lp-config/0.1.2/ea0f36a2e30804631af816838671e018bc1365fe0dda4141a48c584324b54ca4#d69a88b05114cee83773fb56dc00aa395e5a1eed"
-  integrity sha512-66MQjB3e+xvg7dm9xWBw9cJjuaQfSs5ElDOAHSzTXJS9Xszeh0xD2UFfmHXytPz4LnbyMECI5236mt3TdRgNMA==
+"@leafage-gk/lp-config@^0.1.3":
+  version "0.1.3"
+  resolved "https://npm.pkg.github.com/download/@leafage-gk/lp-config/0.1.3/5e8d6039e47c5bbd40c08965e451b2be28ee177f43082b25555794f13949f53e#ec11cdb147b89d5257c410cfc3b94715a0761eaf"
+  integrity sha512-+Yv9S/K1qYKu8WHpAdNwwnomI0ctSd/Y1Obuszo8+IZwSLfPWqugK0HqLjcXFs3tSRrfa76q+kaYPWBywV0low==
   dependencies:
     prerender-spa-plugin "^3.4.0"
 
-"@leafage-gk/lp-utils@^0.1.2":
-  version "0.1.2"
-  resolved "https://npm.pkg.github.com/download/@leafage-gk/lp-utils/0.1.2/e4578329930de9852aae55794c96f56123e3809984373bbee8d86e4d0134235a#f1f85960fcc9946062bb9d733fd401e7c9ae578f"
-  integrity sha512-4ghAd0NqMA9+VlhWykJuUQEu6wOXoqrX3ztadQTXkgXemuWwdw6jmR1Hxqg30JMfY4l5rCnc10TVhcS5Gwc29w==
+"@leafage-gk/lp-utils@^0.1.3":
+  version "0.1.3"
+  resolved "https://npm.pkg.github.com/download/@leafage-gk/lp-utils/0.1.3/65231a5f4c840869a96ab6a3a824b4e1b2cb1bfc8a62668af83176f800485bfe#4e4f4ea9980878cbccaf191d8b6c5223e285168e"
+  integrity sha512-t/HIvBuVLdcxlzDqoAttOsGMQyTRxBdp2eg3iXISSc+xUo8VswnWasg6InMa8lqjj8kMLDcPkU6RlIbbdtEzjg==
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
